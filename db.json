@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "text": "a title",
+      "photo": "./src/assets/images/pexels-photo-39811.jpeg",
+      "Author": "Confucio"
+    },
+    {
+      "id": "2",
+      "text": "another",
+      "photo": "./src/assets/images/pexels-photo-39811.jpeg",
+      "Author": "Yo misma"
+    },
+    {
+      "id": "793904",
+      "text": "imagen",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765452420/kc2lbwf0v2gc6xxxmcca.png",
+      "Author": "yo"
+    },
+    {
+      "id": "216841",
+      "text": "imagen",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765457347/tbhldtbi6tr1p1qjhlrw.png",
+      "Author": "yo"
+    },
+    {
+      "id": "756360",
+      "text": "asdfasdf",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765458514/qjkfdt1ph1n6zc3kzskn.png",
+      "Author": "Anónimo"
+    },
+    {
+      "id": "984912",
+      "text": "asdasdf",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765458532/twwn8vbkqxizursqhmeg.jpg",
+      "Author": "baba"
+    },
+    {
+      "id": "814199",
+      "text": "hola que tal",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765458840/m94jnqcmaghum88boenr.png",
+      "Author": "Anónimo"
+    }
+  ]
+}
