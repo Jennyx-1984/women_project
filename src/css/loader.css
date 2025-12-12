@@ -3,8 +3,8 @@
   100% { opacity: 0 }
 }
 .ldio-x2uulkbinc div {
-  left: 94px;
-  top: 48px;
+  left: 14px;
+  top: 18px;
   position: absolute;
   animation: ldio-x2uulkbinc linear 1s infinite;
   background: #fe718d;
@@ -15,7 +15,7 @@
 }.ldio-x2uulkbinc div:nth-child(1) {
   transform: rotate(0deg);
   animation-delay: -0.9166666666666666s;
-  background: #fe718d;
+  background: #fc0032;
 }.ldio-x2uulkbinc div:nth-child(2) {
   transform: rotate(30deg);
   animation-delay: -0.8333333333333334s;
@@ -27,7 +27,7 @@
 }.ldio-x2uulkbinc div:nth-child(4) {
   transform: rotate(90deg);
   animation-delay: -0.6666666666666666s;
-  background: #fe718d;
+  background: #fb0032;
 }.ldio-x2uulkbinc div:nth-child(5) {
   transform: rotate(120deg);
   animation-delay: -0.5833333333333334s;
@@ -66,7 +66,7 @@
   height: 200px;
   display: inline-block;
   overflow: hidden;
-  background: #ffffff;
+  background: #ff0202;
 }
 .ldio-x2uulkbinc {
   width: 100%;

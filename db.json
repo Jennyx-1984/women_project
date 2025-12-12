@@ -1,46 +1,46 @@
 {
   "posts": [
     {
-      "id": "1",
-      "text": "a title",
-      "photo": "./src/assets/images/pexels-photo-39811.jpeg",
-      "Author": "Confucio"
-    },
-    {
       "id": "2",
-      "text": "another",
-      "photo": "./src/assets/images/pexels-photo-39811.jpeg",
-      "Author": "Yo misma"
+      "text": "\"Cree en ti misma y serás imparable.\"",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765536699/lt1tmvfjovzmnnaxwwx9.jpg",
+      "Author": " Emily Dickinson"
     },
     {
       "id": "793904",
-      "text": "imagen",
-      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765452420/kc2lbwf0v2gc6xxxmcca.png",
-      "Author": "yo"
+      "text": "\"Nada te puede detener si no te detienes a ti misma.\"",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765536726/cvaqc2cmf0xmjnbh7uhf.jpg",
+      "Author": " Oprah Winfrey"
     },
     {
-      "id": "216841",
-      "text": "imagen",
-      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765457347/tbhldtbi6tr1p1qjhlrw.png",
-      "Author": "yo"
+      "id": "832761",
+      "text": "\"No hay límite para lo que, como mujeres, podemos lograr.\"",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765536559/ogjb8kx1t4jz8johse70.jpg",
+      "Author": "Michelle Obama"
     },
     {
-      "id": "756360",
-      "text": "asdfasdf",
-      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765458514/qjkfdt1ph1n6zc3kzskn.png",
-      "Author": "Anónimo"
+      "id": "918522",
+      "text": "MUJER VALIENTE",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765536639/vfn2iizdcsklnzgt41xl.jpg",
+      "Author": "CONFUSIO"
     },
     {
-      "id": "984912",
-      "text": "asdasdf",
-      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765458532/twwn8vbkqxizursqhmeg.jpg",
-      "Author": "baba"
+      "id": "599300",
+      "text": "\"Nunca cambies quién eres para impresionar a alguien más.\"",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765536663/xh4ijiportak3fwx0ygc.jpg",
+      "Author": "Selena Gomez"
     },
     {
-      "id": "814199",
-      "text": "hola que tal",
-      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765458840/m94jnqcmaghum88boenr.png",
-      "Author": "Anónimo"
+      "id": "441020",
+      "text": "MUJER FUERTE",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765459501/opbio3otkcoivryn4aqm.png",
+      "Author": "CONFUSIO"
+    },
+    {
+      "id": "269826",
+      "text": "\"La valentía es como un músculo. Cuanto más lo usas, más fuerte se vuelve.\" ",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765459501/vkjszyg4fypxmhrnini8.jpg",
+      "Author": "Shonda Rhimes"
     }
   ]
 }
