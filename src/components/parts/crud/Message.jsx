@@ -3,7 +3,7 @@ let styles={
     padding:"1rem",
     marginBottom:"1rem",
     textAlign:"center",
-    color:"#fff",
+    color:"#ff0000ff",
     fontWeight:"bold",
     backgroundColor:bgColor
 }
