@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import "../../../css/crudForm.css";
+import { FaEdit, FaEraser, FaSave, FaTimes, FaUpload, FaImages  } from "react-icons/fa";
 
 const galleryDefault = [
     "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765459505/cdrhpvabtcmmlqj3nxjs.jpg",
@@ -61,6 +63,8 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit, closeForm
     if (!form.text || !form.photo) {
       alert("Agrega título y foto");
       return;
+    }else if(form.Author===""){
+      form.Author="Anónimo";
     }
 
     try {
@@ -104,36 +108,41 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit, closeForm
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input name="text" placeholder="Título" value={form.text} onChange={handleChange} />
-      <input name="Author" placeholder="Autor" value={form.Author} onChange={handleChange} />
-      <input type="file" onChange={handleFileChange} />
-      <button type="button" onClick={() => setIsModalOpen(true)}>Elegir imagen de la galería</button>
-      {preview && <img src={preview} width="200" alt="preview" />}
+  <form onSubmit={handleSubmit} className="form-create">
+      <label htmlFor="Author">AUTHOR</label>
+      <input id="Author" name="Author" placeholder="Author" value={form.Author} onChange={handleChange} />
+      <label htmlFor="text">PHRASE</label>
+      <textarea id="text" name="text" placeholder="Empowering Phrase" value={form.text} onChange={handleChange} maxLength={100} />
+      <label className="image-label">IMAGE</label>
+      <div className="imagefield-btn">
+      <input type="file" onChange={handleFileChange} hidden id="fileInput"/><label htmlFor="fileInput" className="btn-type">
+  <FaUpload color="black"/> UPLOAD IMAGE
+</label>
+      <button type="button" onClick={() => setIsModalOpen(true)} className="gallery-btn"><FaImages color="black"/> GALLERY</button></div>
+      {preview && <img src={preview} width="200" alt="preview" className="preview" />}
 
       {isModalOpen && (
-        <div style={{
-          position: "fixed", top:0, left:0, width:"100%", height:"100%",
-          backgroundColor:"rgba(0,0,0,0.5)", display:"flex", justifyContent:"center", alignItems:"center"
-        }}>
-          <div style={{ background:"white", padding:"20px", borderRadius:"10px" }}>
+        <div className="modal-window">
+          <div className="gallery-modal">
             {galleryDefault.map(url => (
               <img
+                className="image-gallery"
                 key={url}
                 src={url}
-                width="80"
-                style={{ cursor:"pointer", border: form.photo===url ? "3px solid blue":"1px solid gray" }}
+                style={{border: form.photo===url ? "3px solid blue":"1px solid gray" }}
                 onClick={() => { setForm({ ...form, photo: url }); setPreview(url); setIsModalOpen(false); }}
               />
             ))}
-            <button onClick={() => setIsModalOpen(false)}>Cerrar</button>
+            <button className="close-btn" onClick={() => setIsModalOpen(false)}>CLOSE</button>
           </div>
         </div>
       )}
-      <div style={{ display: "flex", gap: 8, marginTop: 8 }}>
-        <button type="submit">{form.id ? "Actualizar" : "Agregar"}</button>
-        <button type="button" onClick={closeForm}>Cancelar</button>
-        <button type="button" onClick={handleReset}>Limpiar</button>
+      <div className="btn-field">
+        <button type="submit">
+  {form.id ? <><FaEdit color="black" /> EDIT</> : <><FaSave color="black" /> SAVE</>}
+</button>
+        <button type="button" onClick={closeForm}><FaTimes color="black"/> CANCEL</button>
+        <button type="button" onClick={handleReset}><FaEraser color="black"/> CLEAN</button>
       </div>
     </form>
   );
