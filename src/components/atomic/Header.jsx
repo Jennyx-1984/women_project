@@ -3,8 +3,7 @@ import ButtonNav from './ButtonNav';
 import { useState } from "react";
 import useCrud from '../hooks/useCrud';
 import CrudForm from "../parts/crud/CrudForm";
-// Asegúrate de haber instalado react-icons: npm install react-icons
-import { FaHome, FaStar, FaPlus } from 'react-icons/fa'; 
+import { FaHome, FaHeart, FaPlus } from 'react-icons/fa';
 
 const Header = () => {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -16,44 +15,32 @@ const Header = () => {
 
   return (
     <header>
-      {/* WRAPPER PARA EL LAYOUT HORIZONTAL */}
-      <div className='header-content-wrapper'> 
-        
-        <div className='cabecera'>
-          <img src={Logo} alt="Logo SHE MANIFESTS"/>
-          {/* Si el texto no está en tu imagen de logo, añádelo aquí */}
-        </div>
-        
-        <nav>
-          <ul>
-            {/* 1. HOME */}
-            <li>
-              <ButtonNav texto="HOME" BtnClass="btn-nav" path="/">
-                <FaHome /> 
-              </ButtonNav>
+      <div className='cabecera'>
+        <img src={Logo} alt="Logo SHE MANIFESTS"/>
+      </div>
+      <nav>
+        <ul>
+            <li> 
+                <ButtonNav texto="HOME" BtnClass="btn-nav" path="/"> 
+                    <FaHome /> 
+                </ButtonNav>
             </li>
             
-            {/* 2. FAVORITES */}
             <li>
-              <ButtonNav texto="FAVORITES" BtnClass="btn-nav" path="/Favorites">
-                <FaStar />
-              </ButtonNav>
+                <ButtonNav texto="FAVORITES" BtnClass="btn-nav" path="/Favorites">
+                    <FaHeart /> 
+                </ButtonNav>
             </li>
             
-            {/* 3. CREATE */}
             <li>
-              <button type="button" className='btn-nav' onClick={() => setIsFormOpen(true)}>
-                <FaPlus className="button-icon" /> 
-                CREATE
-              </button>
+                <button type="button" className='btn-nav' onClick={() => setIsFormOpen(true)}>
+                    <FaPlus /> 
+                    CREATE
+                </button>
             </li>
-          </ul>
-        </nav>
+        </ul>
+      </nav>
 
-      </div> 
-      {/* FIN DEL WRAPPER */}
-
-      {/* CÓDIGO DEL MODAL */}
       {isFormOpen && (
         <div style={modalOverlay}>
           <div style={modalContent}>
@@ -69,14 +56,23 @@ const Header = () => {
 };
 
 const modalOverlay = {
-  position: "fixed", top: 0, left: 0, width: "100%", height: "100%",
+  position: "fixed",
+  top: 0, left: 0, width: "100%", height: "100%",
   backgroundColor: "rgba(0,0,0,0.5)",
-  display: "flex", justifyContent: "center", alignItems: "center", zIndex: 1000
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  zIndex: 1000
 };
 
 const modalContent = {
-  backgroundColor: "white", padding: "20px", borderRadius: "10px", 
-  maxWidth: "600px", width: "90%", maxHeight: "80%", overflowY: "auto"
+  backgroundColor: "white",
+  padding: "20px",
+  borderRadius: "10px",
+  maxWidth: "600px",
+  width: "90%",
+  maxHeight: "80%",
+  overflowY: "auto"
 };
 
-export default Header;
+export default Header; 
