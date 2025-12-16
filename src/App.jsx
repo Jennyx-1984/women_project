@@ -1,10 +1,11 @@
 import './App.css'
-import CrudApi from './components/CrudApi'
 import { Cloudinary } from '@cloudinary/url-gen';
 import { auto } from '@cloudinary/url-gen/actions/resize';
 import { autoGravity } from '@cloudinary/url-gen/qualifiers/gravity';
-
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/pages/Home';
+import Header from './components/atomic/Header';
+import Favorites from './components/pages/Favorites';
 
 function App() {
 const cld = new Cloudinary({ cloud: { cloudName: 'dhwkjld3e' } });
@@ -15,8 +16,13 @@ const img = cld
         .resize(auto().gravity(autoGravity()).width(500).height(500)); 
   return (
     <>
-    <CrudApi/>
-
+<Router>
+      <Header/>
+      <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/Favorites" element={<Favorites />} />
+            </Routes>
+          </Router>
 
       </>
   )
