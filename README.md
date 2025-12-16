@@ -72,8 +72,18 @@ npm install axios
 ``` bash
 npm install json-server
 ```
+o
+``` bash
+npm install -g json-server
+```
 
-### 5. Crear archivo db.json (debería estar creado)
+### 5. Instalar React-router-dom
+
+``` bash
+npm install react-router-dom
+```
+
+### 6. Crear archivo db.json (debería estar creado)
 
 ``` db.json
 {
@@ -81,13 +91,17 @@ npm install json-server
 }
 ```
 
-### 6. Iniciar JSON Server
+### 7. Iniciar JSON Server
 
 ``` bash
 npx json-server db.json
 ```
+si lo instalaste en global
 
-### 7. Iniciar React
+``` bash
+npx json-server --watch db.json
+```
+### 8. Iniciar React
 
 ``` bash
 npm run dev
@@ -95,7 +109,8 @@ npm run dev
 
 ## 🗺 Estado del proyecto
 
-Primer sprint en desarrollo.
+✅Primer sprint completado.
+Segundo sprint en desarrollo.
 
 ## 📜 Licencia
 

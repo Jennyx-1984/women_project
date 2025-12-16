@@ -13,60 +13,6 @@
       "Author": " Oprah Winfrey"
     },
     {
-<<<<<<< HEAD
-      "id": "87232",
-      "text": "asefase",
-      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765459501/ydvoovzxp8xa1x4li0lb.png",
-      "Author": "mecmec"
-    },
-    {
-      "id": "532868",
-      "text": "hola como estas",
-      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765459505/racvqtrag6tpq1oayyvl.jpg",
-      "Author": "pues yo"
-    },
-    {
-      "id": "345729",
-      "text": "Jenny",
-      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765788848/t0kbpzgl2mui1ikw1vvy.jpg",
-      "Author": "Jenny"
-    },
-    {
-      "id": "336811",
-      "text": "holilla",
-      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765827075/wofrtfh4ruegytjbz99h.jpg",
-      "Author": "asease"
-    },
-    {
-      "id": "685069",
-      "text": "asease",
-      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765459502/zc8p3jxyc34ukeyhkfaw.jpg",
-      "Author": "aseasease"
-    },
-    {
-      "id": "741953",
-      "text": "aseae",
-      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765829103/ei1qb10hbke8l4uvjcou.png",
-      "Author": "aease"
-    },
-    {
-      "id": "862134",
-      "text": "amo a ",
-      "Author": "si refrescas",
-      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765459502/ge58e3ukohdhvkjljlxe.jpg"
-    },
-    {
-      "id": "462413",
-      "text": "yepo",
-      "Author": "yep",
-      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765840474/osa5okisoifpajjx9vt9.jpg"
-    },
-    {
-      "id": "118798",
-      "text": "hola",
-      "Author": "qe ase",
-      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765459501/wvqq5gvoufmprizknrkd.jpg"
-=======
       "id": "832761",
       "text": "\"No hay límite para lo que, como mujeres, podemos lograr.\"",
       "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765536559/ogjb8kx1t4jz8johse70.jpg",
@@ -95,7 +41,6 @@
       "text": "\"La valentía es como un músculo. Cuanto más lo usas, más fuerte se vuelve.\" ",
       "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765459501/vkjszyg4fypxmhrnini8.jpg",
       "Author": "Shonda Rhimes"
->>>>>>> 10e9de68131c326292fdd92d7ce93fd4f9dc62d0
     }
   ]
 }
