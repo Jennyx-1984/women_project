@@ -38,7 +38,7 @@ const CrudCarousel = ({ db, setDataToEdit, deleteData }) => {
           marginTop: 67,
           marginRight: 620,
           marginBottom: 67,
-          fontFamily: 'quicks',
+          fontFamily: 'popings ',
         }}
       >
         <img
