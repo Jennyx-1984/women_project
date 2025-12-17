@@ -83,7 +83,13 @@ npm install -g json-server
 npm install react-router-dom
 ```
 
-### 6. Crear archivo db.json (debería estar creado)
+### 6. Instalar React-Icons
+
+``` bash
+npm install react-icons
+```
+
+### 7. Crear archivo db.json (debería estar creado)
 
 ``` db.json
 {
@@ -91,7 +97,7 @@ npm install react-router-dom
 }
 ```
 
-### 7. Iniciar JSON Server
+### 8. Iniciar JSON Server
 
 ``` bash
 npx json-server db.json
@@ -101,7 +107,7 @@ si lo instalaste en global
 ``` bash
 npx json-server --watch db.json
 ```
-### 8. Iniciar React
+### 9. Iniciar React
 
 ``` bash
 npm run dev

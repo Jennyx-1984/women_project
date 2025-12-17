@@ -2,6 +2,7 @@ import { useState } from "react";
 import CrudForm from "../parts/crud/CrudForm";
 import CrudTable from "../parts/CrudTable";
 import useCrud from "../hooks/useCrud";
+import "../../css/crudForm.css";
 
 function Home() {
   const { db, createData, updateData, deleteData } = useCrud("http://localhost:3000/posts");
@@ -31,8 +32,8 @@ console.log("DB EN HOME:", db);
       />
 
       {isFormOpen && (
-        <div style={modalOverlay}>
-          <div style={modalContent}>
+        <div className="modal-overlay">
+          <div className="modal-form">
             <CrudForm
               createData={createData}
               updateData={updateData}
@@ -46,25 +47,5 @@ console.log("DB EN HOME:", db);
     </main>
   );
 }
-
-const modalOverlay = {
-  position: "fixed",
-  top: 0, left: 0, width: "100%", height: "100%",
-  backgroundColor: "rgba(0,0,0,0.5)",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  zIndex: 1000
-};
-
-const modalContent = {
-  backgroundColor: "white",
-  padding: "20px",
-  borderRadius: "10px",
-  maxWidth: "600px",
-  width: "90%",
-  maxHeight: "80%",
-  overflowY: "auto"
-};
 
 export default Home;

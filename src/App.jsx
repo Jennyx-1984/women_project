@@ -8,6 +8,7 @@ import Home from './components/pages/Home';
 import Header from './components/atomic/Header';
 import Favorites from './components/pages/Favorites';
 import Footer from './components/atomic/Footer';
+import Footer from './components/atomic/Footer';
 
 function App() {
   const cld = new Cloudinary({ cloud: { cloudName: 'dhwkjld3e' } });

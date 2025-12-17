@@ -3,6 +3,8 @@ import ButtonNav from './ButtonNav';
 import { useState } from "react";
 import useCrud from '../hooks/useCrud';
 import CrudForm from "../parts/crud/CrudForm";
+import "../../css/crudForm.css";   
+import "../../css/header-modal.css";
 import { FaHome, FaHeart, FaPlus } from 'react-icons/fa';
 
 const Header = () => {
@@ -42,37 +44,17 @@ const Header = () => {
       </nav>
 
       {isFormOpen && (
-        <div style={modalOverlay}>
-          <div style={modalContent}>
+        <div className='modal-overlay'>
+          <div className='modal-form'>
             <CrudForm
               createData={createData}
               closeForm={closeForm}
             />
-          </div>
+         </div>
         </div>
+        
       )}
     </header>
   );
 };
-
-const modalOverlay = {
-  position: "fixed",
-  top: 0, left: 0, width: "100%", height: "100%",
-  backgroundColor: "rgba(0,0,0,0.5)",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  zIndex: 1000
-};
-
-const modalContent = {
-  backgroundColor: "white",
-  padding: "20px",
-  borderRadius: "10px",
-  maxWidth: "600px",
-  width: "90%",
-  maxHeight: "80%",
-  overflowY: "auto"
-};
-
-export default Header; 
+export default Header;

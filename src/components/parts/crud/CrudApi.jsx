@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import CrudForm from "../../pages/CrudForm";
 import CrudTable from "../CrudTable";
 import Loader from "./Loader";
