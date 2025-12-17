@@ -1,10 +1,40 @@
 {
   "posts": [
     {
-      "id": "547067",
-      "text": "\"Cree en ti misma y serás imparable.\"",
-      "Author": "michelle obama",
-      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765891169/up0mefkbckxkk3u4nimr.jpg"
+      "id": "419268",
+      "text": "\"La vida se contrae y expande en proporción directa a nuestro coraje.\"",
+      "Author": "Anaïs Nin",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765955564/tetd16xpborqetgefq9s.jpg"
+    },
+    {
+      "id": "667578",
+      "text": "\"Por un mundo donde seamos socialmente iguales, humanamente diferentes y totalmente libres\"",
+      "Author": "Rosa Luxemburgo",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765973185/x8vwpowoxgt5cukunyrv.jpg"
+    },
+    {
+      "id": "651269",
+      "text": "\"Cualquiera que sea la libertad por la que luchamos, debe ser una libertad basada en la igualdad.\"",
+      "Author": "Judith Butler",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765973262/ly8hloxpkag9ymovjqdq.webp"
+    },
+    {
+      "id": "134413",
+      "text": "\"Cuando trataron de callarme, grité \"",
+      "Author": "Teresa Wilms Montt",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765975323/cpw1sufjly9cxyc23ei1.webp"
+    },
+    {
+      "id": "537652",
+      "text": "\"Cree firmemente en tus capacidades personales porque eso define tu éxito\"",
+      "Author": "Harriet Tubman",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765975489/puxgzobcvks7qq2qvras.jpg"
+    },
+    {
+      "id": "175758",
+      "text": "\"La acción es la única facultad humana de hacer milagros\"",
+      "Author": "Hannah Arendt",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765975732/diph1awb3nu0bt7wkawc.webp"
     }
   ]
 }
