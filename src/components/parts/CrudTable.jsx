@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "@fontsource/poppins/400.css";
+//import "@fontsource/poppins/400.css";//
 const CrudCarousel = ({ db, setDataToEdit, deleteData }) => {
   const [index, setIndex] = useState(0);
   useEffect(() => {
