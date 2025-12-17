@@ -35,7 +35,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('src/assets/images/BACKGROUND.png') center / cover no-repeat;
+  background: url('src/assets/back.png') center / cover no-repeat;
 
   z-index: -1;
 }
@@ -69,7 +69,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #120013;
-    background:url(assets/images/BACKGROUND.png) center / cover no-repeat;
+    background:url(src/assets/back.png) center / cover no-repeat;
   
   }
   a:hover {
