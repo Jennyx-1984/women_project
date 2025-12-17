@@ -1,4 +1,4 @@
-import '../../../css/loader.css';
+/*import '../../../css/loader.css';
 
 const Loader = () => {
   return (
@@ -10,4 +10,4 @@ const Loader = () => {
   )
 }
 
-export default Loader
+export default Loader*/

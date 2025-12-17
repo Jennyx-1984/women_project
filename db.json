@@ -2,23 +2,19 @@
   "posts": [
     {
       "id": "547067",
-      "text": "\"Cree en ti misma y serás imparable.\"",
-<<<<<<< HEAD
-      "Author": "michelle obama",
-      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765891169/up0mefkbckxkk3u4nimr.jpg"
-=======
+      "text": "Cree en ti misma y serás imparable.",
       "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765536699/lt1tmvfjovzmnnaxwwx9.jpg",
       "Author": " Emily Dickinson"
     },
     {
       "id": "793904",
-      "text": "\"Nada te puede detener si no te detienes a ti misma.\"",
+      "text": "Nada te puede detener si no te detienes a ti misma.",
       "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765536726/cvaqc2cmf0xmjnbh7uhf.jpg",
       "Author": " Oprah Winfrey"
     },
     {
       "id": "832761",
-      "text": "\"No hay límite para lo que, como mujeres, podemos lograr.\"",
+      "text": "No hay límite para lo que, como mujeres, podemos lograr.",
       "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765536559/ogjb8kx1t4jz8johse70.jpg",
       "Author": "Michelle Obama"
     },
@@ -30,7 +26,7 @@
     },
     {
       "id": "599300",
-      "text": "\"Nunca cambies quién eres para impresionar a alguien más.\"",
+      "text": "Nunca cambies quién eres para impresionar a alguien más.",
       "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765536663/xh4ijiportak3fwx0ygc.jpg",
       "Author": "Selena Gomez"
     },
@@ -42,22 +38,9 @@
     },
     {
       "id": "269826",
-      "text": "\"La valentía es como un músculo. Cuanto más lo usas, más fuerte se vuelve.\" ",
+      "text": "La valentía es como un músculo. Cuanto más lo usas, más fuerte se vuelve.",
       "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765459501/vkjszyg4fypxmhrnini8.jpg",
       "Author": "Shonda Rhimes"
-    },
-    {
-      "id": "363565",
-      "text": "hola que tal como estas yo estoy bien y tu que tal",
-      "Author": "Anónimo",
-      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765459505/cdrhpvabtcmmlqj3nxjs.jpg"
-    },
-    {
-      "id": "948182",
-      "text": "mi ma",
-      "Author": "holilla",
-      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765459505/cdrhpvabtcmmlqj3nxjs.jpg"
->>>>>>> feature/header
     }
   ]
 }

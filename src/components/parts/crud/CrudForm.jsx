@@ -96,7 +96,6 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit, closeForm
       );
       setForm((f) => ({ ...f, photo: res.data.secure_url }));
     } catch (err) {
-      console.error(err);
       alert("No se pudo subir la imagen");
     }
   };

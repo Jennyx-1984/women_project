@@ -1,4 +1,4 @@
-const Message = ({msg,bgColor}) => {
+/*const Message = ({msg,bgColor}) => {
 let styles={
     padding:"1rem",
     marginBottom:"1rem",
@@ -15,4 +15,4 @@ let styles={
   )
 }
 
-export default Message
+export default Message*/

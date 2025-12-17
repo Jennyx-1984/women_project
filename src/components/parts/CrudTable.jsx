@@ -1,6 +1,12 @@
 import { useEffect, useState } from "react";
 //import "@fontsource/poppins/400.css";//
 const CrudCarousel = ({ db, setDataToEdit, deleteData }) => {
+
+  const handleDelete = (id) => {
+  setIndex((i) => (i > 0 ? i - 1 : 0));
+  deleteData(id);
+};
+
   const [index, setIndex] = useState(0);
   useEffect(() => {
     if (!Array.isArray(db) || db.length === 0) return;
@@ -45,7 +51,7 @@ const CrudCarousel = ({ db, setDataToEdit, deleteData }) => {
         </p>
         <div style={{ display: "flex", gap: 12, marginTop: 14 }}>
           <button onClick={() => setDataToEdit(post)}>Editar</button>
-          <button onClick={() => deleteData(post.id)}>Eliminar</button>
+          <button onClick={() => handleDelete(post.id)}>Eliminar</button>
         </div>
         <p style={{ marginTop: 12, fontSize: 16 }}>
           {index + 1} / {db.length}

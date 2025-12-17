@@ -1,4 +1,4 @@
-import { useState } from "react";
+/*import { useState } from "react";
 import CrudForm from "../../pages/CrudForm";
 import CrudTable from "../CrudTable";
 import Loader from "./Loader";
@@ -8,7 +8,6 @@ import useCrud from "../../hooks/useCrud";
 const CrudApi = () => {
   const { db, loader, error, createData, updateData, deleteData } = useCrud("http://localhost:3000/posts");
   const [dataToEdit, setDataToEdit] = useState(null);
-console.log("createData en CrudApi:", createData);
   return (
     <div>
       <h1>Lista de Posts</h1>
@@ -40,5 +39,5 @@ console.log("createData en CrudApi:", createData);
 };
 
 
-export default CrudApi;
+export default CrudApi;*/
 
