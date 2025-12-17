@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/pages/Home';
 import Header from './components/atomic/Header';
 import Favorites from './components/pages/Favorites';
+import Footer from './components/atomic/Footer';
 
 function App() {
 const cld = new Cloudinary({ cloud: { cloudName: 'dhwkjld3e' } });
@@ -22,6 +23,7 @@ const img = cld
               <Route path="/" element={<Home />} />
               <Route path="/Favorites" element={<Favorites />} />
             </Routes>
+            <Footer/>
           </Router>
 
       </>
