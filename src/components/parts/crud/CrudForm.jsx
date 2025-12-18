@@ -35,7 +35,6 @@ const galleryDefault = [
     "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765789158/heddyghuvwpruw6shiiy.jpg"
     ]
 
-
 const initialForm = { id: null, text: "", Author: "", photo: "" };
 
 const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit, closeForm }) => {

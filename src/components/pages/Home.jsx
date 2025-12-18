@@ -6,7 +6,6 @@ import "../../css/crudForm.css";
 import Footer from '../atomic/Footer';
 import Header from '../atomic/Header';
 
-
 function Home() {
   const { db, createData, updateData, deleteData } = useCrud("http://localhost:3000/posts");
   const [dataToEdit, setDataToEdit] = useState(null);

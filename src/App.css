@@ -22,7 +22,6 @@ main {
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
@@ -42,7 +41,6 @@ header {
   min-height: 30px;
   width: 100%; 
   margin: 0;
-  /*background-color: #ff8c00;*/
   padding: 0;
   display: flex;
   justify-content: flex-start; 

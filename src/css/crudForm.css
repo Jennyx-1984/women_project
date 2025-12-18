@@ -117,12 +117,10 @@ label{
     border:1px solid #42EFEF;
 }
 
-
 .btn-type:active, .gallery-btn:active {
     color:black;
     background-color: #f92003;
 }
-
 
 .btn-field button:active{
     color:black;

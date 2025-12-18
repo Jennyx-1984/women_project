@@ -14,7 +14,6 @@ function App() {
     .format('auto')
     .quality('auto')
     .resize(auto().gravity(autoGravity()).width(500).height(500));
-
   return (
     <>
       <Router>
@@ -23,7 +22,6 @@ function App() {
           <Route path="/Favorites" element={<Favorites />} />
         </Routes>
       </Router>
-
     </>
   )
 }

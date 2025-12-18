@@ -11,7 +11,6 @@ const Header = ({ onCreate }) => {
       <div className='cabecera'>
         <img src={Logo} alt="Logo SHE MANIFESTS"/>
       </div>
-
       <nav>
         <ul>
           <li>
@@ -19,13 +18,11 @@ const Header = ({ onCreate }) => {
               <FaHome />
             </ButtonNav>
           </li>
-
           <li>
             <ButtonNav texto="FAVORITES" BtnClass="btn-nav" path="/Favorites">
               <FaHeart />
             </ButtonNav>
           </li>
-
           <li>
             <button type="button" className="btn-nav" onClick={onCreate}>
               <FaPlus /> CREATE

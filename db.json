@@ -1,16 +1,46 @@
 {
   "posts": [
     {
-      "id": "23401",
-      "text": "guauhello",
-      "Author": "gauguaguag",
-      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765459502/u5d2zv7sefpv43gjrdqc.jpg"
+      "id": "547067",
+      "text": "Cree en ti misma y serás imparable.",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765536699/lt1tmvfjovzmnnaxwwx9.jpg",
+      "Author": " Emily Dickinson"
     },
     {
-      "id": "561358",
-      "text": "hola",
-      "Author": "hola",
-      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765459505/cdrhpvabtcmmlqj3nxjs.jpg"
+      "id": "793904",
+      "text": "Nada te puede detener si no te detienes a ti misma.",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765536726/cvaqc2cmf0xmjnbh7uhf.jpg",
+      "Author": " Oprah Winfrey"
+    },
+    {
+      "id": "832761",
+      "text": "No hay límite para lo que, como mujeres, podemos lograr.",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765536559/ogjb8kx1t4jz8johse70.jpg",
+      "Author": "Michelle Obama"
+    },
+    {
+      "id": "918522",
+      "text": "MUJER VALIENTE",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765536639/vfn2iizdcsklnzgt41xl.jpg",
+      "Author": "CONFUSIO"
+    },
+    {
+      "id": "599300",
+      "text": "Nunca cambies quién eres para impresionar a alguien más.",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765536663/xh4ijiportak3fwx0ygc.jpg",
+      "Author": "Selena Gomez"
+    },
+    {
+      "id": "441020",
+      "text": "MUJER FUERTE",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765459501/opbio3otkcoivryn4aqm.png",
+      "Author": "CONFUSIO"
+    },
+    {
+      "id": "269826",
+      "text": "La valentía es como un músculo. Cuanto más lo usas, más fuerte se vuelve.",
+      "photo": "https://res.cloudinary.com/dhwkjld3e/image/upload/v1765459501/vkjszyg4fypxmhrnini8.jpg",
+      "Author": "Shonda Rhimes"
     }
   ]
-} 
+}
