@@ -129,15 +129,19 @@ h1 {
 
 button {
   border-radius: 10px;
-  border: 1px solid transparent;
   padding: 3px;
   font-size: 1em;
-  font-weight: 500;
   font-family: inherit;
   background-color: #06547e;
   cursor: pointer;
   transition: border-color 0.25s;
   margin: 20px;
+  color: white;
+  font-weight: bold;
+  border:3px solid white;
+  line-height: 50px;
+  width: 50px;
+  border-radius: 20px;
   
 }
 button:hover {
