@@ -3,31 +3,36 @@ import CrudForm from "../parts/crud/CrudForm";
 import CrudTable from "../parts/CrudTable";
 import useCrud from "../hooks/useCrud";
 import "../../css/crudForm.css";
+import Footer from '../atomic/Footer';
+import Header from '../atomic/Header';
+
 
 function Home() {
   const { db, createData, updateData, deleteData } = useCrud("http://localhost:3000/posts");
   const [dataToEdit, setDataToEdit] = useState(null);
   const [isFormOpen, setIsFormOpen] = useState(false);
 
-
-  
-  const openFormForEdit = (post) => {
-    setDataToEdit(post);
+  const openCreateForm = () => {
+    setDataToEdit(null);
     setIsFormOpen(true);
   };
-
 
   const closeForm = () => {
     setIsFormOpen(false);
     setDataToEdit(null);
   };
-console.log("DB EN HOME:", db);
+
   return (
+    <>
     <main>
+      <Header onCreate={openCreateForm} />
 
       <CrudTable
         db={db}
-        setDataToEdit={openFormForEdit}
+        setDataToEdit={(post) => {
+          setDataToEdit(post);
+          setIsFormOpen(true);
+        }}
         deleteData={deleteData}
       />
 
@@ -45,7 +50,10 @@ console.log("DB EN HOME:", db);
         </div>
       )}
     </main>
+     <Footer />
+     </>
   );
 }
+
 
 export default Home;

@@ -2,6 +2,10 @@
   0% { opacity: 1 }
   100% { opacity: 0 }
 }
+
+.loader{
+  margin: 0 auto;
+}
 .ldio-x2uulkbinc div {
   left: 14px;
   top: 18px;

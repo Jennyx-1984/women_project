@@ -1,16 +1,11 @@
 import { useState, useEffect } from "react";
 import helpCrud from "../helpers/helpCrud";
-
 const useCrud = (url) => {
   console.log("useCrud ejecutado");
-
   const [db, setDB] = useState([]);
   const [error, setError] = useState(null);
   const [loader, setLoading] = useState(false);
   const api = helpCrud();
-
-  
-
   const generateId = () => Math.floor(Math.random() * 1000000).toString();
   const readData = async () => {
   setLoading(true);

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 //import "@fontsource/poppins/400.css";//
 import CardActionButton from "../atomic/CardActionButton";
 import "../../css/buttonRight.css";
+import NoData from "../atomic/NoData";
 const CrudCarousel = ({ db, setDataToEdit, deleteData }) => {
 
   const handleDelete = (id) => {
@@ -14,7 +15,7 @@ const CrudCarousel = ({ db, setDataToEdit, deleteData }) => {
     if (!Array.isArray(db) || db.length === 0) return;
     if (index > db.length - 1) setIndex(db.length - 1);
   }, [db, index]);
-  if (!Array.isArray(db) || db.length === 0) return <p>No hay datos disponibles</p>;
+  if (!Array.isArray(db) || db.length === 0) return <p><NoData/></p>;
   const post = db[index];
   const phrase =
     post.text ?? post.frase ?? post.phrase ?? post.quote ?? post.Frase ?? "";
@@ -49,11 +50,9 @@ const CrudCarousel = ({ db, setDataToEdit, deleteData }) => {
           alt={phrase}
           style={{ objectFit: "cover", height: 340, width: 440, borderRadius: 32, }}
         />
-        <p style={{ fontSize: 48, margin: "15px 0 6px" }}>
-          <strong>Frase:</strong> {phrase}
-        </p>
+        <p style={{ fontSize: 48, margin: "15px 0 6px" }}> "{phrase}"</p>
         <p style={{ fontSize: 26, margin: 0 }}>
-          <strong>Autor:</strong> {author}
+          <i>{author}</i>
         </p>
         <div style={{ display: "flex", gap: 12, marginTop: 14 }}>
           <CardActionButton action="edit" ariaLabel="Editar" title="Editar" onClick={() => setDataToEdit(post)} />
