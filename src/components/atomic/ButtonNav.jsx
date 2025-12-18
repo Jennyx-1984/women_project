@@ -1,6 +1,6 @@
 
 
-import '../../css/ButtonNav.css';
+//import '../../css/ButtonNav.css';
 import { useNavigate } from 'react-router-dom';
 
 const Button=({texto, BtnClass, path, children})=>{

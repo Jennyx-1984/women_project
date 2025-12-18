@@ -78,8 +78,7 @@ button:focus-visible {
   button {
     background-color: #e65c06;
   }
-}
-*/
+}*/
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -159,6 +158,12 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #e65c06;
+    background-color: #06547e;
+    color: white;
+    font-weight: bold;
+    border:3px solid white;
+    line-height: 50px;
+    width: 50px;
+    border-radius: 20px;
   }
 }

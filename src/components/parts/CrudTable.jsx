@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 //import "@fontsource/poppins/400.css";//
+import CardActionButton from "../atomic/CardActionButton";
+import "../../css/buttonRight.css";
 const CrudCarousel = ({ db, setDataToEdit, deleteData }) => {
 
   const handleDelete = (id) => {
@@ -36,8 +38,12 @@ const CrudCarousel = ({ db, setDataToEdit, deleteData }) => {
           marginRight: 620,
           marginBottom: 67,
           fontFamily: '',
+          position : "relative",
         }}
       >
+        <div style={{ position: "absolute", top: 20, right: 20 }}>
+          <CardActionButton action="favorite" ariaLabel="Favorito" title="Favorito" onClick={() => console.log("favorite", post.id)} />
+        </div>
         <img
           src={post.photo}
           alt={phrase}
@@ -50,14 +56,14 @@ const CrudCarousel = ({ db, setDataToEdit, deleteData }) => {
           <strong>Autor:</strong> {author}
         </p>
         <div style={{ display: "flex", gap: 12, marginTop: 14 }}>
-          <button onClick={() => setDataToEdit(post)}>Editar</button>
-          <button onClick={() => handleDelete(post.id)}>Eliminar</button>
+          <CardActionButton action="edit" ariaLabel="Editar" title="Editar" onClick={() => setDataToEdit(post)} />
+          <CardActionButton action="delete" ariaLabel="Eliminar" title="Eliminar" onClick={() => handleDelete(post.id)} />
         </div>
         <p style={{ marginTop: 12, fontSize: 16 }}>
           {index + 1} / {db.length}
         </p>
       </div>
-      <button onClick={goNext} disabled={db.length === 1}>›</button>
+      <button onClick={goNext} className="right" disabled={db.length === 1}>›</button>
     </div>
   );
 };

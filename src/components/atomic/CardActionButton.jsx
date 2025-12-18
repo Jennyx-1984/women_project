@@ -1,9 +1,6 @@
-import "../../css/cardActionButton.css";
-import {
-  CiEdit,
-  RiDeleteBin6Line,
-  RiHeartLine,
-} from "react-icons/ci";
+import styles from "../../css/cardActionButton.module.css";
+import { CiEdit } from "react-icons/ci";
+import { RiDeleteBin6Line, RiHeartLine } from "react-icons/ri";
 
 const ICONS = {
   edit: <CiEdit />,
@@ -11,25 +8,9 @@ const ICONS = {
   favorite: <RiHeartLine />,
 };
 
-const CardActionButton = ({
-  action = "edit",
-  onClick,
-  disabled = false,
-  className = "",
-  ariaLabel,
-  title,
-  ref,
-}) => {
+const CardActionButton = ({ action = "edit", onClick, disabled = false, className = "", ariaLabel, title, ref }) => {
   return (
-    <button
-      ref={ref}
-      type="button"
-      onClick={onClick}
-      disabled={disabled}
-      className={`card-action-button card-action-button--${action} ${className}`}
-      aria-label={ariaLabel}
-      title={title}
-    >
+    <button ref={ref} type="button" onClick={onClick} disabled={disabled} className={`${styles.button} ${styles[action]} ${className}`} aria-label={ariaLabel} title={title}>
       {ICONS[action]}
     </button>
   );
