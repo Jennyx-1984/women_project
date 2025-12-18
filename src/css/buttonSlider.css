@@ -1,0 +1,30 @@
+.right{
+    position: relative;
+    right: 620px;
+    opacity: 50%;
+    font-size: 40px;
+    padding-bottom: 61px;
+}
+
+.right:hover{
+    opacity: 100%;
+    border:3px solid #4b0082;
+    cursor: pointer;
+}
+
+
+.button-left{
+    opacity:50%;
+    font-size: 40px;
+    padding-bottom: 61px;
+}
+
+.button-left:hover{
+    opacity:100%;
+    border:3px solid #4b0082;
+    cursor: pointer;
+}
+
+.simbol{
+   text-align: center;
+}

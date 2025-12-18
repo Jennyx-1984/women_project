@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-//import "@fontsource/poppins/400.css";//
 import CardActionButton from "../atomic/CardActionButton";
-import "../../css/buttonRight.css";
+import "../../css/buttonSlider.css";
 import NoData from "../atomic/NoData";
 const CrudCarousel = ({ db, setDataToEdit, deleteData }) => {
 
@@ -24,40 +23,65 @@ const CrudCarousel = ({ db, setDataToEdit, deleteData }) => {
   const goNext = () => setIndex((i) => (i + 1) % db.length);
   const goPrev = () => setIndex((i) => (i - 1 + db.length) % db.length);
   return (
-    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 16 }}>
-      <button onClick={goPrev} disabled={db.length === 1}>‹</button>
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 16, marginBottom:50 }}>
+      <button onClick={goPrev} disabled={db.length === 1} className="button-left">‹</button>
       <div
         key={post.id}
         style={{
-          width: 620,
+          width: "37%",
           border: "4px solid #000000ff",
           padding: 22,
-          backgroundColor: "#14807C",
+          backgroundColor: "rgba(75, 0, 130, 0.75)",
           borderRadius: 35,
-          overflow: "hidden",
           marginTop: 67,
           marginRight: 620,
           marginBottom: 67,
-          fontFamily: '',
-          position : "relative",
+          position:"relative",
         }}
       >
-        <div style={{ position: "absolute", top: 20, right: 20 }}>
+        <div style={{ position: "absolute", top: -50, right: -40, zIndex:5 }}>
           <CardActionButton action="favorite" ariaLabel="Favorito" title="Favorito" onClick={() => console.log("favorite", post.id)} />
         </div>
         <img
           src={post.photo}
           alt={phrase}
-          style={{ objectFit: "cover", height: 340, width: 440, borderRadius: 32, }}
+          style={{ objectFit: "cover", height: 500, width: 625, borderRadius: 32, filter: "brightness(60%) contrast(160%)" }}
         />
-        <p style={{ fontSize: 48, margin: "15px 0 6px" }}> "{phrase}"</p>
-        <p style={{ fontSize: 26, margin: 0 }}>
+        <p style={{ 
+          fontSize: 48, 
+          margin: "15px 0 6px", 
+          position:"absolute", 
+          top:"3%", 
+          left:"5%", 
+          color:"white", 
+          width:600,
+          height:"auto",
+          overflowWrap:"break-word"  }}>"{phrase}"</p>
+        <p style={{ 
+          fontSize: 26, 
+          margin: 0, 
+          position:"absolute",
+          backgroundColor:"#E8DEF8",
+          borderRadius:"8px",
+          textAlign:"center",
+          width:"fit-content",
+          paddingLeft:10,
+          paddingRight:10,
+          top:460,
+          left:450
+          }}>
           <i>{author}</i>
         </p>
-        <div style={{ display: "flex", gap: 12, marginTop: 14 }}>
+        <div style={{ position:"absolute", top:550, right:350 }}>
           <CardActionButton action="edit" ariaLabel="Editar" title="Editar" onClick={() => setDataToEdit(post)} />
-          <CardActionButton action="delete" ariaLabel="Eliminar" title="Eliminar" onClick={() => handleDelete(post.id)} />
-        </div>
+         </div>   
+         <div style={{ position:"absolute", top:550, right:200 }}>
+          <CardActionButton action="delete" ariaLabel="Eliminar" title="Eliminar" style={{
+            position:"absolute",
+            top:100,
+            right: 20
+          }} onClick={() => handleDelete(post.id)} />
+       </div>
         <p style={{ marginTop: 12, fontSize: 16 }}>
           {index + 1} / {db.length}
         </p>
