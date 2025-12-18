@@ -46,19 +46,19 @@ h1 {
 }
 
 button {
-  padding: 3px;
   font-size: 1em;
   font-family: inherit;
-  background-color: #06547e;
+  background-color: white;
   cursor: pointer;
   transition: border-color 0.25s;
   margin: 20px;
-  color: white;
+  color:#4b0082;
   font-weight: bold;
-  border:3px solid white;
-  line-height: 50px;
+  border:3px solid #4b0082;
+  height: 60px;
   width: 50px;
   border-radius: 20px;
+  text-align: center;
   
 }
 button:hover {
@@ -79,12 +79,13 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #06547e;
-    color: white;
+    background-color: white;
+    color:#4b0082;
     font-weight: bold;
-    border:3px solid white;
-    line-height: 50px;
+    border:3px solid #4b0082;
     width: 50px;
+    height:60px;
     border-radius: 20px;
+    text-align: center;
   }
 }

@@ -1,9 +1,9 @@
 .button {
-  width: 58px;
-  height: 58px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   border: none;
-  background-color: #6fb6c1;
+  background: linear-gradient(145deg, #ff9a9e 0%, #fad0c4 99%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,9 +11,9 @@
 }
 
 .button svg {
-  width: 32px;
-  height: 32 px;
-  color: white;
+  width: 50px;
+  height: 32px;
+  color: #4b0082;
 }
 
 .button:hover {
