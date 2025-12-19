@@ -67,8 +67,8 @@ const CrudCarousel = ({ db, setDataToEdit, deleteData }) => {
           width:"fit-content",
           paddingLeft:10,
           paddingRight:10,
-          top:460,
-          left:450
+          top:"75%",
+          left:"60%"
           }}>
           <i>{author}</i>
         </p>
