@@ -72,10 +72,10 @@ const CrudCarousel = ({ db, setDataToEdit, deleteData }) => {
           }}>
           <i>{author}</i>
         </p>
-        <div style={{ position:"absolute", top:550, right:350 }}>
+        <div style={{ position:"absolute", top:550, right:"60%" }}>
           <CardActionButton action="edit" ariaLabel="Editar" title="Editar" onClick={() => setDataToEdit(post)} />
          </div>   
-         <div style={{ position:"absolute", top:550, right:200 }}>
+         <div style={{ position:"absolute", top:550, right:"30%" }}>
           <CardActionButton action="delete" ariaLabel="Eliminar" title="Eliminar" style={{
             position:"absolute",
             top:100,
