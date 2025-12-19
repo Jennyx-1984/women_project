@@ -45,7 +45,7 @@ const CrudCarousel = ({ db, setDataToEdit, deleteData }) => {
         <img
           src={post.photo}
           alt={phrase}
-          style={{ objectFit: "cover", height: 500, width: 625, borderRadius: 32, filter: "brightness(60%) contrast(160%)" }}
+          style={{ objectFit: "cover", height: 500, width: "90%", borderRadius: 32, filter: "brightness(60%) contrast(160%)"}}
         />
         <p style={{ 
           fontSize: 48, 
@@ -54,7 +54,7 @@ const CrudCarousel = ({ db, setDataToEdit, deleteData }) => {
           top:"3%", 
           left:"5%", 
           color:"white", 
-          width:600,
+          width:"80%",
           height:"auto",
           overflowWrap:"break-word"  }}>"{phrase}"</p>
         <p style={{ 
